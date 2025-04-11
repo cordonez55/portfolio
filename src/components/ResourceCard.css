@@ -1,0 +1,33 @@
+.resource-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.resource-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.resource-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.resource-content p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.resource-content a {
+  color: #333;
+  text-decoration: underline;
+  font-weight: 500;
+}
