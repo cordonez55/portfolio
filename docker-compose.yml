@@ -1,0 +1,8 @@
+version: '3'
+services:
+  portfolio:
+    build: .
+    ports:
+      - "5575:80"
+    container_name: ordonez_cassandra_coding_assignment14
+    working_dir: /ordonez_cassandra_final_site
