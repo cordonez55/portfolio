@@ -24,7 +24,7 @@ function Resources() {
       title: "Volere Requirements Template",
       summary: "The Volere requirements specification template for gathering and documenting system needs.",
       link: "https://www.volere.org/template.htm",
-      image: "https://www.volere.org/images/volere-logo.gif",
+      image: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
     },
   ];
 
