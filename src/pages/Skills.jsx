@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SkillCard from "../components/SkillCard";
 
 function Skills () {
@@ -30,12 +31,19 @@ function Skills () {
   ];
 
   return (
-    <div>
-      <h2>Skills</h2>
-      {skills.map((skill, index) => (
-        <SkillCard key={index} {...skill}/>
-      ))}
-    </div>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.4 }}
+    >
+      <div>
+        <h2>Skills</h2>
+        {skills.map((skill, index) => (
+          <SkillCard key={index} {...skill}/>
+        ))}
+      </div>
+    </motion.div>
   );
 }
 
