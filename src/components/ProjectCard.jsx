@@ -1,4 +1,5 @@
 import "./ProjectCard.css";
+import '../App.css';
 
 function ProjectCard({ title, description, image, link, tech }) {
   return (

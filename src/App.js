@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TypingBanner from './components/TypingBanner';
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -11,6 +12,7 @@ import Setup from "./pages/Setup";
 function App() {
   return (
     <Router>
+      <TypingBanner />
       <Header />
       <main style={{ padding: "1rem" }}>
         <Routes>

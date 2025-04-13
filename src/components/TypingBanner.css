@@ -1,0 +1,9 @@
+.typing-banner {
+  background-color: var(--color-bg);
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}

@@ -1,4 +1,5 @@
 import "./SkillCard.css";
+import '../App.css';
 
 function SkillCard({ title, description, tools }) {
   return (

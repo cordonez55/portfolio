@@ -1,4 +1,5 @@
 import "./ResourceCard.css";
+import '../App.css';
 
 function ResourceCard ({ title, summary, link, image }) {
   return (
