@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TypingBanner from './components/TypingBanner';
+import SiteIntro from './components/SiteIntro';
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -13,6 +14,7 @@ function App() {
   return (
     <Router>
       <TypingBanner />
+      <SiteIntro />
       <Header />
       <main style={{ padding: "1rem" }}>
         <Routes>

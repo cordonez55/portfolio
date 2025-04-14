@@ -8,6 +8,11 @@
   --color-button: #9e8f7e;
 }
 
+main {
+  padding: 1rem;
+  margin-top: 0;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -36,7 +41,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -245,15 +250,15 @@ nav a {
 
 .section-container {
   background: linear-gradient(to bottom, #f6ede4, #fefaf7);
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   border-radius: 20px;
-  margin: 2rem;
+  margin: 1.5rem 2rem;
 }
 
 .section-container h2 {
   font-size: 2rem;
   color: var(--color-accent);
-  margin-bottom: 2rem;
+  margin: 0 0 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -304,5 +309,27 @@ nav a {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
+}
+
+.site-intro-banner {
+  background: linear-gradient(to right, #d8f0eb, #f6ede4);
+  padding: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.site-intro-banner .main-line {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.site-intro-banner .tagline {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 

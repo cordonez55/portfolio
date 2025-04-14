@@ -1,6 +1,5 @@
 .setup-page {
   padding: 2rem;
-  color: #377d75;
   max-width: 1100px;
   margin: auto;
   text-align: center;
@@ -15,13 +14,21 @@
 
 .setup-card {
   background-color: rgba(158, 143, 126, 0.6);
-  color: #377d75;
   border-left: 5px solid var(--color-accent);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   text-align: left;
   transition: 0.3s ease;
+  color: #377d75;
+}
+
+.setup-card h3 {
+  color: #377d75;
+}
+
+.setup-card h2 {
+  color: #377d75;
 }
 
 .setup-card:hover {
@@ -36,5 +43,5 @@
   margin-top: 3rem;
   border-radius: 10px;
   font-style: italic;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10x rgba(0, 0, 0, 0.1);
 }
