@@ -1,4 +1,5 @@
 import ResourceCard from "../components/ResourceCard";
+import { motion } from 'framer-motion';
 
 function Resources() {
   const resources = [
@@ -29,12 +30,20 @@ function Resources() {
   ];
 
   return (
-    <div>
-      <h2>Resources</h2>
-      {resources.map((resource, idx) => (
-        <ResourceCard key={idx} {...resource} />
-      ))}
-    </div>
+    <motion.div
+    className="section-container"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    >
+      <div>
+        <h2>Resources</h2>
+        {resources.map((resource, idx) => (
+          <ResourceCard key={idx} {...resource} />
+        ))}
+      </div>
+    </motion.div>
   );
 }
 

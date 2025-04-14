@@ -1,7 +1,7 @@
 .resource-card {
   display: flex;
   align-items: flex-start;
-  background-color: #f7f7f7;
+  background-color: #rgba(158, 143, 126, 0.6);
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 10px;

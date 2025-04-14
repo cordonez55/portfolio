@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import { motion } from 'framer-motion';
 
 function Projects() {
   const projects = [
@@ -25,12 +26,20 @@ function Projects() {
   ];
 
   return (
-    <div>
-      <h2>Project Page</h2>
-      {projects.map((proj, idx) => (
-        <ProjectCard key={idx} {...proj} />
-      ))}
-    </div>
+    <motion.div
+    className="section-container"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    >
+      <div>
+        <h2>Project Page</h2>
+        {projects.map((proj, idx) => (
+          <ProjectCard key={idx} {...proj} />
+        ))}
+      </div>
+    </motion.div>
   );
 }
 
