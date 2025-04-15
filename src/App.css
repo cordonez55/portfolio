@@ -333,3 +333,54 @@ nav a {
   margin-top: 0.5rem;
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left .typing-text {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 1rem;
+}
+
+.nav-center .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-center .nav-links li a {
+  color: var(--color-accent);
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(158, 143, 126, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--color-shadow);
+  transition: all 0.3s ease;
+}
+
+.nav-center .nav-links li a:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-right a {
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+.nav-right a:hover {
+  transform: scale(1.2);
+}
