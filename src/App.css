@@ -3,7 +3,7 @@
   --color-bg: #f7efe5;
   --color-text: #1a1a1a;
   --color-accent: #377d75;
-  --color-card: #ffffff;
+  --color-card: rgba(158, 143, 126, 0.6);
   --color-shadow: rgba(0, 0, 0, 0.1);
   --color-button: #9e8f7e;
 }
@@ -109,7 +109,7 @@ nav a {
   .project-card,
   .skill-card,
   .resource-card {
-    background-color: rgba(158, 143, 126, 0.6);
+    background-color: rgba(158, 143, 126, 0.6) !important;
     color: var(--color-accent);
     border-left: 6px solid var(--color-accent);
     border-radius: 12px;
@@ -313,11 +313,26 @@ nav a {
 
 .site-intro-banner {
   background: linear-gradient(to right, #d8f0eb, #f6ede4);
-  padding: 1.25rem;
-  margin: 0 0 0.5rem 0;
+  padding: 1rem 2rem;
+  margin: 0 auto 1.5rem auto;
   border-radius: 0 0 20px 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: 110px;
+}
+
+.site-intro-text {
+  flex: 1;
+}
+
+.site-intro-img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .site-intro-banner .main-line {
@@ -345,7 +360,12 @@ nav a {
 .nav-left .typing-text {
   font-weight: 600;
   color: var(--color-accent);
-  font-size: 1rem;
+  font-size: 1.5rem;
+  width: 200px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+
 }
 
 .nav-center .nav-links {
@@ -384,3 +404,4 @@ nav a {
 .nav-right a:hover {
   transform: scale(1.2);
 }
+
